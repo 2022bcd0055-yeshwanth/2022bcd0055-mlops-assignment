@@ -1,0 +1,10 @@
+[core]
+    remote = myremote
+['remote "my-remote"']
+    url = s3://mlops-bucket
+['remote "myremote"']
+    url = s3://mlops-bucket
+    endpointurl = http://localhost:9000
+    access_key_id = admin
+    secret_access_key = admin123
+    use_ssl = false

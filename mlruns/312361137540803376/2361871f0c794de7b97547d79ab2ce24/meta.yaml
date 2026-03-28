@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/yeshwanth/Documents/mlops/2022bcd0055-mlops-assignment/mlruns/312361137540803376/2361871f0c794de7b97547d79ab2ce24/artifacts
+end_time: 1774715766541
+entry_point_name: ''
+experiment_id: '312361137540803376'
+lifecycle_stage: active
+run_id: 2361871f0c794de7b97547d79ab2ce24
+run_name: powerful-dolphin-5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774715766476
+status: 3
+tags: []
+user_id: yeshwanth

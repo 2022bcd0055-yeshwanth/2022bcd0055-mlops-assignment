@@ -12,18 +12,20 @@ dataset = sys.argv[1]       # v1 or v2
 model_type = sys.argv[2]    # rf or lr
 feature_mode = sys.argv[3]  # full or reduced
 
-mlflow.set_experiment("2022bcd0056_experiment")
+mlflow.set_tracking_uri("file:./mlruns")
+mlflow.set_experiment("2022bcd0055_experiment")
 
 # Load data
 df = pd.read_csv(f"data/diabetes_{dataset}.csv")
 
-# Target column (adjust if needed)
 target = "diabetes"
+
+# HANDLE CATEGORICAL DATA
+df = pd.get_dummies(df, drop_first=True)
 
 # Feature selection
 if feature_mode == "reduced":
-    features = df.columns[:5]  # take first few features
-    X = df[features]
+    X = df.drop(columns=[target]).iloc[:, :5]
 else:
     X = df.drop(columns=[target])
 

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/yeshwanth/Documents/mlops/2022bcd0055-mlops-assignment/mlruns/312361137540803376/a9522eda07a342a3879a4398bfa32574/artifacts
+end_time: 1774715775400
+entry_point_name: ''
+experiment_id: '312361137540803376'
+lifecycle_stage: active
+run_id: a9522eda07a342a3879a4398bfa32574
+run_name: suave-stag-351
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1774715773897
+status: 3
+tags: []
+user_id: yeshwanth
