@@ -20,3 +20,9 @@ jobs:
 
     - name: Train model
       run: python src/train.py v2 rf full
+
+    - name: Build Docker Image
+      run: docker build -t mlops-test .
+
+    - name: Run Docker Container (test)
+      run: docker run -d -p 8000:8000 mlops-test
