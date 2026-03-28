@@ -1,5 +1,7 @@
+pandas
+scikit-learn
+mlflow
 fastapi
 uvicorn
 joblib
-pandas
-scikit-learn
+dvc[s3]
