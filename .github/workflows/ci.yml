@@ -15,8 +15,8 @@ jobs:
     - name: Install DVC
       run: pip install dvc[s3]
 
-    - name: Pull data
-      run: dvc pull
+    - name: Skip DVC pull
+      run: echo "Skipping DVC pull"
 
     - name: Train model
       run: python src/train.py v2 rf full
