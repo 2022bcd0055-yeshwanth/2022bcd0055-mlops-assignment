@@ -1,0 +1,23 @@
+name: MLOps Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Install DVC
+      run: pip install dvc[s3]
+
+    - name: Pull data
+      run: dvc pull
+
+    - name: Run training
+      run: python src/train.py v2 rf full
